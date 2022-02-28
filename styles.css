@@ -5,7 +5,140 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Verdana, serif;
-  background-color: pink;
+  background-color: #00ff8b;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  border-bottom: 1px solid white;
+  background-color: #002e19;
+  width: 100%;
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  width: 75%;
+  margin: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+/* Intro */
+
+.intro {
+  height: 50rem;
+  background-image: url(media/tennis-court.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  color: white;
+  background-color: rgba(52, 235, 168, 0.75);
+  padding: 3rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro {
+    height: 30rem;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Info */
+
+.info {
+  height: 20rem;
+  padding: 5rem;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.info h2 {
+  font-size: 2rem;
+  color: darkgreen;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.info p {
+  padding: .5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .info h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Photos */
+
+.photos {
+  overflow: hidden;
+  padding: 3rem;
+
+}
+
+.photos img {
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+  margin: 1.5%;
+}
+
+
+@media only screen and (max-width: 1048px) {
+  .photos {
+    padding: 0;
+  }
+
+  .photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid white;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: .75rem;
+  opacity: 0.75;
+  color: white;
+  background-color: #002e19;
 }
